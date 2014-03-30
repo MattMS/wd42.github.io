@@ -1,0 +1,147 @@
+doctype html
+html.no-js
+	head
+		meta(charset="utf-8")
+		meta(http-equiv="X-UA-Compatible", content="IE=edge")
+		meta(name="description", content="")
+		meta(name="viewport", content="width=device-width, initial-scale=1")
+		title Web Developer 42&#730;
+
+		link(rel="stylesheet", href="http://fonts.googleapis.com/css?family=Exo:400,700,200,100|Nunito")
+		link(rel="stylesheet", href="css/normalize.css")
+		link(rel="stylesheet", href="css/main.css")
+		script(src="js/vendor/modernizr-2.6.2.min.js")
+
+	body
+		a#lightswitch.lightswitch(href="#")
+
+		.contain
+			header.top
+				img(src="img/logo.png")
+				span.cover
+
+			.inner
+				nav
+					ul
+						li: a(data-index="0", href="#about") About
+						li: a(data-index="1", href="#where") Where
+						li: a(data-index="2", href="#gallery") Coverage
+						li: a(data-index="3", href="#sponsors") Sponsors
+						li: a(data-index="4", href="#contact") Contact
+
+				ul
+					li#about.swiper-slide.about
+						section.content
+							h4.
+								Web Developer 42&#730; is a monthly meetup for
+								Tasmanian web developers, designers and
+								tinkerers.
+							p.
+								Each month the team behind #wd42 work hard to
+								deliver a range of compelling topics for
+								discussion, presented by some of Tasmania's best
+								emerging and established web professionals.
+							p Attendance is free, with food and drink provided!
+							p Join us at the next event on the 26th of March.
+
+							a.btn(
+								href="https://ti.to/wd42/20140326",
+								target="_blank"
+							) Register
+							a.btn(
+								href="http://lanyrd.com/2014/wd42-march/",
+								target="_blank"
+							) Event details
+
+					li#where.swiper-slide.contact
+						section#map.content
+
+					li#gallery.swiper-slide.gallery
+						section.content
+							a(href="http://farm6.staticflickr.com/5500/9214304170_f8339ebaa2_b.jpg")
+								img(src="http://farm6.staticflickr.com/5500/9214304170_f8339ebaa2_q.jpg")
+							a(href="http://farm8.staticflickr.com/7451/9214307218_3ea3f838db_b.jpg")
+								img(src="http://farm8.staticflickr.com/7451/9214307218_3ea3f838db_q.jpg")
+							a(href="http://farm8.staticflickr.com/7360/9211526993_d54a28f6e5_b.jpg")
+								img(src="http://farm8.staticflickr.com/7360/9211526993_d54a28f6e5_q.jpg")
+							a(href="http://farm3.staticflickr.com/2825/9214306470_1b9887769b_b.jpg")
+								img(src="http://farm3.staticflickr.com/2825/9214306470_1b9887769b_q.jpg")
+							a(href="http://farm3.staticflickr.com/2868/11657849624_204852a08f_b.jpg")
+								img(src="http://farm3.staticflickr.com/2868/11657849624_204852a08f_q.jpg")
+							a(href="http://farm6.staticflickr.com/5546/11657837743_dc82e9a4ff_b.jpg")
+								img(src="http://farm6.staticflickr.com/5546/11657837743_dc82e9a4ff_q.jpg")
+							a(href="http://farm6.staticflickr.com/5486/11657597633_916202ab1e_b.jpg")
+								img(src="http://farm6.staticflickr.com/5486/11657597633_916202ab1e_q.jpg")
+							a(href="http://farm8.staticflickr.com/7362/9214306088_278c14b619_b.jpg")
+								img(src="http://farm8.staticflickr.com/7362/9214306088_278c14b619_q.jpg")
+							a(href="http://farm4.staticflickr.com/3775/9214307590_af91f33e88_b.jpg")
+								img(src="http://farm4.staticflickr.com/3775/9214307590_af91f33e88_q.jpg")
+
+					li#sponsors.swiper-slide.sponsors
+						section.content
+							a(href="http://typewriterfactory.com/")
+								img(
+									src="img/sponsors/typewriter.gif",
+									width="170",
+									height="170",
+									alt="The Typewriter Factory"
+								)
+
+					li#contact.swiper-slide.subscribe
+						section.content
+							h4 Get in touch via:
+							a.btn.social(href="https://twitter.com/webdev42") Twitter
+								span.icon.icon-twitter
+							a.btn.social(href="https://www.facebook.com/webdev42") Facebook
+								span.icon.icon-facebook
+							a.btn.social(href="https://github.com/wd42") Github
+								span.icon.icon-github
+							a.btn.social(href="mailto:web@dev42.co?subject=Thanks for being awesome!") web@dev42.co
+								span.icon.icon-envelope
+
+							h4 Get calendar updates:
+							a.btn.social(href="http://www.google.com/calendar/ical/joshgilli.es_ets7187s9vds2f1j4vsiljtf4k%40group.calendar.google.com/public/basic.ics") iCal
+								span.icon.icon-calendar
+
+							h4 Get email updates:
+							form#mc-embedded-subscribe-form.validate(
+								action="http://dev42.us3.list-manage.com/subscribe/post?u=9d22e44a865117ce25234bc95&amp;id=bedd17d01d",
+								method="post",
+								name="mc-embedded-subscribe-form",
+								target="_blank",
+								novalidate
+							)
+								input#mce-EMAIL.required.email(
+									name="EMAIL",
+									placeholder="Enter your email...",
+									type="email",
+									value=""
+								)
+								input#mc-embedded-subscribe.btn(
+									name="subscribe",
+									type="submit",
+									value="Sign Up"
+								)
+
+			footer.bottom
+				h1 the second closest webdev meetup to Antarctica.
+				span.cover
+
+			span.screen
+
+		script.
+			window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')
+		script(
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkHGQkb4pYY4fBgUsIGwTJ6gwhBQZ7u74&sensor=false",
+			type="text/javascript"
+		)
+		script(src="js/plugins.js")
+		script(src="index.js")
+
+		script.
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-49198262-1', 'dev42.co');
+			ga('send', 'pageview');
